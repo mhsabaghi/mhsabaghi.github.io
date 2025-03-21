@@ -1,43 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
 }
 header {
-    text-align: center;
+  text-align: center;
 }
-h1 {
-    color: #333;
+.tabs {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
-h2 {
-    color: #555;
+.tab {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  outline: none;
+  transition: background 0.3s;
+  margin-right: 5px;
+}
+.tab:hover {
+  background: #0056b3;
+}
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.active {
+  display: block;
+}
+.active-tab {
+  background: #0056b3;
 }
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 li {
-    background: #fff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .project-details {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #007BFF; /* Optional: Add a colored left border */
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff; /* Optional: Add a colored left border */
 }
 a {
-    text-decoration: none;
-    color: #007BFF;
+  text-decoration: none;
+  color: #007bff;
 }
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 footer {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
